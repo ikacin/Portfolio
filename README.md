@@ -1,6 +1,6 @@
 ## Getting Started with Vite, TypeScript, and Mantine
 
-This project was bootstrapped with [Vite](https://vitejs.dev/) and uses [TypeScript](https://www.typescriptlang.org/) along with [Mantine](https://mantine.dev/) for UI components.
+This project was  [Vite](https://vitejs.dev/) and uses [TypeScript](https://www.typescriptlang.org/) along with [Mantine](https://mantine.dev/) for UI components.
 
 ### Available Scripts
 
