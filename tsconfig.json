@@ -9,8 +9,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "checkJs": false
+    "allowJs": false,   // JS dosyalarını dahil etmiyorsak false olmalı
+    "checkJs": true,    // JS dosyalarını type-check etmeliyiz
+    "declaration": true,  // TS declaration dosyalarının oluşturulmasını sağlar
+    "composite": true,    // TS projeleri arasında derlemeyi etkinleştirir
+    "outDir": "./dist",   // Derleme çıktısını tutacak dizin
+    "rootDir": "./src"    // Kaynak dosyalarının bulunduğu dizin
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]  // Gereksiz dosyaların dahil edilmemesi için exclude edilir
 }
