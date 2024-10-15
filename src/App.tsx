@@ -1,15 +1,15 @@
 import { useEffect, useState, useCallback } from "react";
 import { IconArrowNarrowUp } from '@tabler/icons-react';
 import styled, { keyframes } from 'styled-components';
-import AboutPage from '../src/components/pages/AboutPage.jsx';
-import HomePage from '../src/components/pages/HomePage.jsx';
-import ProjectPage from '../src/components/pages/ProjectPage.jsx';
-import SkillPage from '../src/components/pages/SkillPage.jsx';
-import EducationPage from '../src/components/pages/EducationPage.jsx';
 
+// HomePage, AboutPage, ProjectPage, SkillPage ve EducationPage bileşenlerini doğrudan import ediyoruz
+import HomePage from '../src/components/pages/HomePage';
+import AboutPage from '../src/components/pages/AboutPage';
+import ProjectPage from '../src/components/pages/ProjectPage';
+import SkillPage from '../src/components/pages/SkillPage';
+import EducationPage from '../src/components/pages/EducationPage';
 
 export default function App() {
-
     const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
 
     const toggleVisible = useCallback(() => {
@@ -59,7 +59,6 @@ export default function App() {
     );
 }
 
-
 const fadeInUp = keyframes`
   0% {
     opacity: 0;
@@ -72,23 +71,23 @@ const fadeInUp = keyframes`
 `;
 
 const BackToTopButton = styled.button`
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  background-color: #1c7ed6; 
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  animation: ${fadeInUp} 0.4s ease; 
-  transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #1c7ed6;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: ${fadeInUp} 0.4s ease;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
 
-  &:hover {
-    background-color: #1971c2; 
-  }
+    &:hover {
+        background-color: #1971c2;
+    }
 `;
